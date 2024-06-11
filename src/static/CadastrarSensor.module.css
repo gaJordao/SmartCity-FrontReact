@@ -1,0 +1,36 @@
+.conteiner {
+    display: flex;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color:var(--roxo-claro);
+    font-size:24px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cinza-claro);
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    align-items: center;
+}
+
+.campo {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.botao {
+    background-color: var(--roxo-escuro);
+    color: var(--cinza-claro);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+}

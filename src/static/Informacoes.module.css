@@ -1,0 +1,160 @@
+.InformacoesDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12vh;
+}
+
+.Informacoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 7vh;
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 3vh;
+    gap: 8vh;
+}
+
+.tituloInformacoes{
+    font-size: 4vh;     
+}
+
+.listas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.itensUl{
+    font-size: 2vh;
+    font-weight: 500;
+    list-style-type: none;
+}
+
+.tituloListas{
+    font-size: 2.2vh;
+}
+
+.allComponents{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+   
+}
+
+.divInformacoes{
+    display: flex;
+    flex-direction: column;
+    background-color: #3D3D3D;
+    color: #ffffff;
+    padding: 2.3vw;
+    border-radius: 1.3vh;
+    gap: 2.6vh;
+}
+
+.linkMapa{
+    color: #ffffff;
+    font-size: 1.8vh;
+}
+
+.allInformacoes{
+    display: flex;
+    flex-direction: column;
+    padding: 5vh;
+    gap: 10vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.Informacoes2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    max-width: 2000px;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4vw;
+}
+
+.formulario label{
+    font-size: 1.8vh;
+    font-weight: 600;
+}
+
+.formulario input{
+    border: none;
+    border-bottom: 0.3vh solid black;
+    padding: 0.6vh;
+    width: 11vw;
+    font-size: 2vh;
+    outline: none;
+}
+
+.filtros{
+    display: flex;
+    flex-direction: column;
+}
+
+.filtroCheck{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+.filtroCheck input{
+    width: 0.8vw;
+}
+
+.botaoFiltrar{
+    width: 8vw;
+    height: 4vh;
+    border-radius: 1vh;
+    font-size: 1.8vh;
+    color: #ffffff;
+    background-color: #3D3D3D;
+    border: none;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.botaoCadastrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 12.2vw;
+    height: 4vh;
+    border-radius: 1vh;
+    font-size: 1.8vh;
+    color: #ffffff;
+    background-color: #3D3D3D;
+    border: none;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.botaoFiltrar:hover{
+    color: #ffffff;
+    background-color: #e24444;
+}
+
+.botaoCadastrar:hover{
+    color: #ffffff;
+    background-color: #e24444;
+}
+

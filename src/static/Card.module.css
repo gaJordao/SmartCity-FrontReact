@@ -1,0 +1,44 @@
+.cardSensor{
+    background-color: #3D3D3D;
+    padding: 3vh;
+    color: #ffffff;
+    font-size: 1vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    border-radius: 2vh;
+    width: 18vw;
+}
+.cardSensor h1{
+    font-weight: 500;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6vw;
+    height: 3vh;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #3D3D3D;
+    border: none;
+    border-radius: 1vh;
+    font-size: 1.7vh;
+    margin-top: 2vh;
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #ff4e4e;
+    color: #ffffff;
+}
+
+.botaoDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffff;
+    height: 6vh;
+    gap: 45vw;
+    width: 100%;
+}
+
+.titleLogo{
+    color: #434343;
+    font-size: 2.2vh;
+}
+
+.spanLogo{
+    color: #F50202;
+}
+
+.linksHeader{
+    display: flex;
+    justify-content: space-between;
+    gap: 8vw;
+}
+
+.linksHeader a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.6vh;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.linksHeader a:hover{
+    color: #949494;
+}

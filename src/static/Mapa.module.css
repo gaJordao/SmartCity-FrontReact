@@ -1,0 +1,26 @@
+.divAll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 65vh;
+    background-color: #FFFFFF;
+    border-radius: 2vh;
+    gap: 13vh;
+    padding: 4vh;
+}
+
+.titleMap{
+    font-size: 5vh;
+}
+
+.map{
+    width: 80%;
+    height: 50vh;
+    border: 0;
+}
