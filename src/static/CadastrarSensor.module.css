@@ -1,36 +1,53 @@
 .conteiner {
     display: flex;
-    height: 450px;
     justify-content: center;
     align-items: center;
+    height: 110vh;
+    flex-direction: column;
 }
 
 .titulo {
-    color:var(--roxo-claro);
-    font-size:24px;
+    font-weight: 700;
+    font-size: 3vh;
 }
 
 .formulario {
     display: flex;
     flex-direction: column;
-    background-color: var(--cinza-claro);
-    padding: 30px;
+    background-color: #fcfcfc;
+    width: 30vw;
+    height: 98vh;
     border-radius: 10px;
-    font-size: 16px;
     align-items: center;
+    justify-content: center;
+    gap: 4vh;
 }
 
 .campo {
-    margin-bottom: 10px;
-    padding: 5px;
-    border-radius: 6px;
-    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 1vh;
+    font-size: 1.8vh;
+    border: none;
+    border-bottom: black 0.3vh solid;
+    font-family: "Inter", sans-serif;
+    outline: 0;
 }
 
 .botao {
-    background-color: var(--roxo-escuro);
-    color: var(--cinza-claro);
+    background-color: rgb(0, 0, 0);
+    color: white;
     padding: 10px;
-    border-radius: 8px;
-    font-size: 16px;
+    border: 0;
+    border-radius: 1.3vh;
+    font-family: "Inter", sans-serif;
+    font-size: 1.8vh;
+    width: 11vw;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.botao:hover {
+    background-color: rgb(124, 124, 124);
+    color: white;
 }

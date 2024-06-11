@@ -143,7 +143,7 @@ export function AlterarSensor() {
           </div>
 
           <div className={estilos.opcoesEditar}>
-            <label>Status Operacional</label>
+            <label>Está em funcionamento</label>
             <input {...register("status_operacional")} type="checkbox"/>
           </div>
 

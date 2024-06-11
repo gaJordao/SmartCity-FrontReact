@@ -1,10 +1,10 @@
-// src/Paginas/CadastrarSensor.jsx
 import React from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import estilos from '../static/CadastrarSensor.module.css';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
+import { Header } from "../components/Header";
 import { zodResolver } from '@hookform/resolvers/zod';
 
 const schemaSensor = z.object({
@@ -41,10 +41,12 @@ export function CadastrarSensor() {
     }
 
     return (
+        <>
+        <Header></Header>
         <div className={estilos.conteiner}>
-            <p className={estilos.titulo}>Cadastro de Sensor</p>
-
             <form className={estilos.formulario} onSubmit={handleSubmit(obterDadosFormulario)}>
+            <p className={estilos.titulo}>Cadastro de Sensor</p>
+            
                 <select {...register('tipo')} className={estilos.campo}>
                     <option value="">Selecione o tipo de sensor</option>
                     <option value="Temperatura">Temperatura</option>
@@ -73,7 +75,7 @@ export function CadastrarSensor() {
                 {errors.unidade_medida && <p className={estilos.mensagem}>{errors.unidade_medida.message}</p>}
 
                 <label className={estilos.campoCheckbox}>
-                    Status Operacional:
+                    Está funcionando: 
                     <input {...register('status_operacional')} type="checkbox" />
                 </label>
 
@@ -83,5 +85,6 @@ export function CadastrarSensor() {
                 <button className={estilos.botao}>Cadastrar</button>
             </form>
         </div>
+        </>
     );
 }

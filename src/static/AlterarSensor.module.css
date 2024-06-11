@@ -22,14 +22,25 @@
     border-radius: 1vh;
     font-size: 1.8vh;
     border: none;
+    outline: 0;
 }
 
 .botao {
-    background-color: var(--roxo-escuro);
-    color: var(--cinza-claro);
+    background-color: rgb(0, 0, 0);
+    color: white;
     padding: 10px;
-    border-radius: 8px;
-    font-size: 16px;
+    border: 0;
+    border-radius: 1.3vh;
+    font-family: "Inter", sans-serif;
+    font-size: 1.8vh;
+    width: 11vw;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.botao:hover {
+    background-color: rgb(124, 124, 124);
+    color: white;
 }
 .mensagem {
     font-size: .9rem;
