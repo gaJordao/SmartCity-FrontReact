@@ -6,7 +6,7 @@ export function Card({id, tipo, localizacao, latitude, longitude, responsavel}) 
 
     async function deletarSensor(id) {
         try {
-            const response = await axios.delete(`http://127.0.0.1:8000/api/sensores/${id}`, {
+            const response = await axios.delete(`https://gabrielfaiska.pythonanywhere.com/api/sensores/${id}`, {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('access_token')}`
                 }

@@ -24,7 +24,7 @@ export function Informacoes() {
       try {
         const token = localStorage.getItem("access_token");
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/sensores/",
+          "https://gabrielfaiska.pythonanywhere.com/api/sensores/",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -44,7 +44,7 @@ export function Informacoes() {
     idSalas.forEach(async (id) => {
       try {
         const response = await axios.post(
-          `http://127.0.0.1:8000/api/temperatura_filter/`,
+          `https://gabrielfaiska.pythonanywhere.com/api/temperatura_filter/`,
           {
             "sensor_id": id,
             "valor_gte": 10,
@@ -85,7 +85,7 @@ export function Informacoes() {
     try {
       const token = localStorage.getItem("access_token");
       const response = await axios.post(
-        "http://127.0.0.1:8000/api/sensor_filter/",
+        "https://gabrielfaiska.pythonanywhere.com/api/sensor_filter/",
         filters,
         {
           headers: {
@@ -112,19 +112,19 @@ export function Informacoes() {
             <div className={estilos.divInformacoes}>
               <h3 className={estilos.tituloListas}>Temperatura das salas</h3>
               <div className={estilos.listas}>
-  <ul>
-    {temperaturas.reduce((uniqueTemperaturas, temperatura) => {
-      if (!uniqueTemperaturas.some(temp => temp.sensor === temperatura.sensor)) {
-        uniqueTemperaturas.push(temperatura);
-      }
-      return uniqueTemperaturas;
-    }, []).map((temperatura) => (
-      <li key={temperatura.sensor} className={estilos.itensUl}>
-        {`Sensor ID ${temperatura.sensor}: ${temperatura.valor}°`}
-      </li>
-    ))}
-  </ul>
-</div>
+                <ul>
+                  {temperaturas.reduce((uniqueTemperaturas, temperatura) => {
+                    if (!uniqueTemperaturas.some(temp => temp.sensor === temperatura.sensor)) {
+                      uniqueTemperaturas.push(temperatura);
+                    }
+                    return uniqueTemperaturas;
+                  }, []).map((temperatura) => (
+                    <li key={temperatura.sensor} className={estilos.itensUl}>
+                      {`Sensor ID ${temperatura.sensor}: ${temperatura.valor}°`}
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
             </div>
 

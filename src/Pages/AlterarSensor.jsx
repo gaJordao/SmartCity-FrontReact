@@ -30,7 +30,7 @@ export function AlterarSensor() {
   const obterDadosSensor = async () => {
       try {
           const token = localStorage.getItem('access_token');
-          const response = await axios.get(`http://127.0.0.1:8000/api/sensores/${id}/`, {
+          const response = await axios.get(`https://gabrielfaiska.pythonanywhere.com/api/sensores/${id}/`, {
               headers: {
                   'Authorization': `Bearer ${token}`
               }
@@ -55,7 +55,7 @@ export function AlterarSensor() {
       try {
           const token = localStorage.getItem('access_token');
           //chamo a api passando "data"
-          await axios.put(`http://127.0.0.1:8000/api/sensores/${id}/`, data, {
+          await axios.put(`https://gabrielfaiska.pythonanywhere.com/api/sensores/${id}/`, data, {
               headers: {
                   'Authorization': `Bearer ${token}`
               }

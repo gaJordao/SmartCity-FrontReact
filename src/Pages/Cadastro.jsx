@@ -19,7 +19,7 @@ export function Cadastro() {
 
     async function cadastrarUsuario(data) {
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/token/', {
+            const response = await axios.post('https://gabrielfaiska.pythonanywhere.com/api/token/', {
                 username: "smart_user",
                 password: "123456"
             });
@@ -29,7 +29,7 @@ export function Cadastro() {
             localStorage.setItem('access_token', access);
             localStorage.setItem('refresh_token', refresh);
     
-            const responseCadastro = await axios.post(`http://127.0.0.1:8000/api/create_user`, 
+            const responseCadastro = await axios.post(`https://gabrielfaiska.pythonanywhere.com/api/create_user`, 
             {
                 username: data.usuario,
                 email: data.email,
